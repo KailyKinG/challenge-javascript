@@ -73,6 +73,9 @@ function exponencial(exp) {
 // Aclaraciones: el segundo parametro que recibe la funcion ('direccion') puede ser pasado vacio (null)
 
 function direcciones(laberinto, direccion = "") {
+
+   //Mi Solucion
+
     let count = 0;
     if(laberinto == undefined || laberinto == null){
       return '';
@@ -90,6 +93,20 @@ function direcciones(laberinto, direccion = "") {
             if(count == 0){
             return '';
             }
+
+
+   //Solucion Bootcamp
+
+   // var recorrido = "";
+   // for(const prop in laberinto){
+   //    if(laberinto[prop] === "destino"){
+   //       return recorrido += prop;
+   //    }
+   //    if(typeof laberinto[prop] === "object"){
+   //       recorrido = recorrido + prop + direcciones(laberinto[prop]);
+   //    }
+   // }
+   // return recorrido;
 }
 
 
